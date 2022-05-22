@@ -209,7 +209,8 @@ class RCJSoccerReferee:
             str: Name of the robot that is kicking off.
         """
         # Always kickoff with the third robot
-        robot = f"{team}3"
+        team ='B'
+        robot = f"{team}1"
 
         self.sv.set_robot_position(robot, KICKOFF_TRANSLATION[team])
         self.sv.set_robot_rotation(robot, ROBOT_INITIAL_ROTATION[robot])

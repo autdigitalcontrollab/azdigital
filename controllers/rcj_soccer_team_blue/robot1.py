@@ -35,7 +35,10 @@ class MyRobot1(RCJSoccerRobot):
                 # Get data from sonars
                 sonar_values = self.get_sonar_values()  # noqa: F841
 
-                # Compute the speed for motors
+                self.left_motor.setVelocity(10)
+                
+
+                '''# Compute the speed for motors
                 direction = utils.get_direction(ball_data["direction"])
 
                 # If the robot has the ball right in front of it, go forward,
@@ -52,4 +55,4 @@ class MyRobot1(RCJSoccerRobot):
                 self.right_motor.setVelocity(right_speed)
 
                 # Send message to team robots
-                self.send_data_to_team(self.player_id)
+                self.send_data_to_team(self.player_id)'''
